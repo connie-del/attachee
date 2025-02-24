@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="style.css" />
     <title>Café Elegance</title>
 </head>
@@ -18,14 +19,17 @@
     
         </div>
     </header>
-    <img loading="lazy" decoding="async" src="images/cafe-elegance.jpg" height="600" width="1500">
+
+    <img loading="lazy" decoding="async" src="images/cafe-elegance.jpg"alt="cafe-elegance"  height="600" width="1500">
     
+
     <section id="about" class="section">
         <div class="container">
             <h2>About Us</h2>
             <p>Welcome to Café Elegance, where we serve the finest coffee and pastries in town. Our cozy atmosphere and friendly staff make us the perfect spot to start your day or unwind after work.</p>
         </div>
     </section>
+
     <section id="menu" class="section">
         <div class="container">
             <h2>Our Menu</h2>
@@ -47,16 +51,20 @@
             </div>
         </div>
     </section>
+
     <section id="contact" class="section">
         <div class="container">
             <h2>Contact Us</h2>
             <div class="contact-left">
                 <form action="">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
 
                     <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
 
                     <input type="submit" class="send-message-cta" value="Send message">
                 </form>
@@ -67,10 +75,13 @@
             <p>Email us at: <a href="info@cafeelegance.com">info@cafeelegance.com</a>
         </div>
     </section>
+
     <footer>
         <div class="container">
             <p>&copy; 2025 Café Elegance. All rights reserved.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
+
 </body>
 </html>
